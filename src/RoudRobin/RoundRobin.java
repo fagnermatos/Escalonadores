@@ -28,7 +28,7 @@ public class RoundRobin {
 	
 			executando = escalonar(fila);
 			
-			// Armazena na variavel dadosProcsExecucao para plota no grafico
+			
 			dadosProcsExecucao.add(executando.clone());
 			
 			atualizaTempoResposta(executando,ciclo);
