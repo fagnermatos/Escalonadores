@@ -25,9 +25,7 @@ public class RoundRobin {
 			
 			Processo aux = new Processo();
 			Processo executando = new Processo();
-			
-			
-			
+	
 			executando = escalonar(fila);
 			
 			// Armazena na variavel dadosProcsExecucao para plota no grafico
@@ -35,10 +33,6 @@ public class RoundRobin {
 			
 			atualizaTempoResposta(executando,ciclo);
 			atualizaTempoRestante(executando);
-			
-			
-			
-			
 			
 			if (finalizado(executando)) {
 				atualizaTempoRetorno(executando,tempoTotal+quantum);	
