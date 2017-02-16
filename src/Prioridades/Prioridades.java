@@ -28,17 +28,10 @@ public class Prioridades {
 			
 			executando = escalonar(fila); 
 			
-			// Armazena na variavel dadosProcsExecucao para plota no grafico
-			dadosProcsExecucao.add(executando.clone());
-			
 			tempoTotal += executando.getTempoRestante();
-			//tempoRestate = executando.getTempoRestante();
+			
 			atualizaTempoResposta(executando,ciclo);
 			atualizaTempoRestante(executando);
-			
-			
-			
-			
 			
 			if (finalizado(executando)) {
 				atualizaTempoRetorno(executando,tempoTotal);	
